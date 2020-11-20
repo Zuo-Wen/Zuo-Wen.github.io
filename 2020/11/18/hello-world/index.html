@@ -128,8 +128,12 @@ if (asideStatus !== undefined) {
       serverURLs: '',
       emojiCDN: '',
       emojiMaps: "",
-      enableQQ: false,
+      enableQQ: true,
       path: window.location.pathname,
+      master: 'af471ef0a7722af32211a3813f92fddf,f3eee6584469589e2ab93ac4fd8514ae'.split(','),
+      friends: 'f53d47d8ddf7e72f4321f6eb5219a2a1'.split(','),
+      tagMeta: '博主,小伙伴,访客'.split(',')
+
     }
 
     if (true) { 
@@ -145,7 +149,7 @@ if (asideStatus !== undefined) {
   }
 
   if (typeof Valine === 'function') initValine() 
-  else $.getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js', initValine)
+  else $.getScript('https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js', initValine)
 }
 
 if ('Valine' === 'Valine' || !true) {
